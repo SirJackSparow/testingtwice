@@ -29,7 +29,7 @@ class CartActivity : BaseViewBinding<ActivityCartBinding>() {
                 }
                 startActivity(Intent(this,CelebrateOrder::class.java))
             }else {
-                Toast.makeText(this, "Mau Beli Apa Quantity Anda Kosong?", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Mau Beli Apa Quantity Anda Kosong ?", Toast.LENGTH_SHORT).show()
             }
 
         }
