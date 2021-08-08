@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TwiscodeTest</string>
+    <string name="category">Category</string>
+    <string name="filter">Filter</string>
+    <string name="try_again">Try Again</string>
+
+</resources>

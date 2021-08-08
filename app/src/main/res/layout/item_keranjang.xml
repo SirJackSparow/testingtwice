@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            app:layout_constraintStart_toEndOf="@id/img"
+            android:textColor="#2196F3"
+            android:text="Jamu"
+            app:layout_constraintTop_toTopOf="@id/img"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/harga"
+            app:layout_constraintStart_toEndOf="@id/img"
+            android:textColor="#FFC107"
+            android:text="Rp 2000"
+           app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            app:layout_constraintEnd_toStartOf="@id/plus"
+            android:textColor="#2196F3"
+            android:text="0"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/plus"
+            app:layout_constraintStart_toStartOf="@id/min"
+            android:text="stock 10"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/quantity"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/min"
+            android:src="@drawable/ic_baseline_indeterminate_check_box_24"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/quantity"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/plus"
+            android:src="@drawable/ic_baseline_add_box_24"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
