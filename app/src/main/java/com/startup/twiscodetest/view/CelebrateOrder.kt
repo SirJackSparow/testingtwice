@@ -12,12 +12,12 @@ import com.startup.twiscodetest.view.main.MainActivity
 class CelebrateOrder : BaseViewBinding<ActivityCelebrateOrderBinding>() {
     override fun onGetData() {
         bind.hurray.addAnimatorListener(object : Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animator?) {}
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationStart(p0: Animator) {}
+            override fun onAnimationEnd(p0: Animator) {
                 startActivity(Intent(this@CelebrateOrder,MainActivity::class.java))
             }
-            override fun onAnimationCancel(animation: Animator?) {}
-            override fun onAnimationRepeat(animation: Animator?) {}
+            override fun onAnimationCancel(p0: Animator) {}
+            override fun onAnimationRepeat(p0: Animator) {}
         })
     }
 

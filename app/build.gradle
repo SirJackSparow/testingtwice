@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.startup.twiscodetest"
         minSdk 25
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -61,8 +61,8 @@ dependencies {
     implementation "com.airbnb.android:lottie:3.4.2"
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-    implementation "androidx.room:room-runtime:2.3.0"
-    implementation "androidx.room:room-rxjava2:2.3.0"
-    implementation 'androidx.room:room-ktx:2.3.0'
-    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-runtime:2.5.2"
+    implementation "androidx.room:room-rxjava2:2.5.2"
+    implementation 'androidx.room:room-ktx:2.5.2'
+    kapt "androidx.room:room-compiler:2.5.2"
 }
